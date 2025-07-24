@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f0f2f5;
+}
+
+.topbar {
+  background: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+.dashboard {
+  display: flex;
+  height: calc(100vh - 120px);
+}
+
+.sidebar {
+  width: 200px;
+  background: #1f1f1f;
+  color: white;
+  padding: 1rem;
+}
+
+.sidebar button {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background: #333;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.editor-area {
+  flex: 1;
+  background: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#editorCanvas {
+  width: 90%;
+  max-width: 600px;
+  height: 300px;
+  background: #fafafa;
+  border: 2px dashed #ccc;
+  position: relative;
+}
+
+.draggable {
+  position: absolute;
+  cursor: move;
+  user-select: none;
+}
+
+.timeline {
+  height: 60px;
+  background: #ddd;
+  border-top: 1px solid #bbb;
+  padding: 0.5rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.timeline .clip {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  background: #888;
+  margin-right: 5px;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+}
