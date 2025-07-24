@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vizly Editor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="topbar">
+    <h1>🎬 Vizly Editor</h1>
+    <div>
+      <button id="saveBtn">💾 Save</button>
+      <button id="exportBtn">📤 Export</button>
+    </div>
+  </div>
+
+  <div class="dashboard">
+    <div class="sidebar">
+      <button id="addTextBtn">Add Text</button>
+      <button id="addImageBtn">Add Image</button>
+      <button id="addVideoBtn">Add Video</button>
+      <button id="addTransitionBtn">Add Transition</button>
+      <input type="file" id="imageInput" accept="image/*" hidden />
+      <input type="file" id="videoInput" accept="video/*" hidden />
+    </div>
+
+    <div class="editor-area">
+      <div id="editorCanvas"></div>
+    </div>
+  </div>
+
+  <div class="timeline">
+    <div id="timelineClips"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="timeline.js"></script>
+  <script src="transitions.js"></script>
+
+</body>
+</html>
